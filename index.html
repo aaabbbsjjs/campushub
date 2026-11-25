@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f2f2a" />
+    <title>Campus Hub · 校园效率站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand"><div class="brand-mark">CH</div><div><strong>Campus</strong><span>效率站</span></div></div>
+        <div class="term-tag">2026 · 秋季学期</div>
+        <nav class="nav-list" aria-label="主导航">
+          <button class="nav-item active" data-section="overview"><span class="nav-icon">⌂</span>总览 <kbd>01</kbd></button>
+          <button class="nav-item" data-section="parcel"><span class="nav-icon">▣</span>快递中心 <kbd>02</kbd></button>
+          <button class="nav-item" data-section="courses"><span class="nav-icon">◫</span>课程助手 <kbd>03</kbd></button>
+          <button class="nav-item" data-section="requests"><span class="nav-icon">↗</span>事务申请 <kbd>04</kbd></button>
+          <button class="nav-item" data-section="activity"><span class="nav-icon">✳</span>校园活动 <kbd>05</kbd></button>
+        </nav>
+        <div class="sidebar-bottom"><div class="mini-profile"><div class="avatar">林</div><div><strong>林同学</strong><span>视觉传达 · 大三</span></div><button class="more">···</button></div><div class="help-note"><span>?</span><div><strong>需要帮忙？</strong><p>查看校园服务指南</p></div></div></div>
+      </aside>
+      <main class="main-content">
+        <header class="topbar"><div class="breadcrumb"><span>我的校园</span><b>/</b><strong id="pageTitle">今日总览</strong></div><div class="top-actions"><button class="icon-btn" id="searchBtn" aria-label="搜索">⌕</button><button class="icon-btn notification" aria-label="通知">♢<i></i></button><div class="top-avatar">林</div></div></header>
+        <div class="content-wrap">
+          <section class="hero"><div><p class="eyebrow">WEDNESDAY · NOV 25</p><h1>今天，也要<br><em>轻松一点。</em></h1><p class="hero-copy">把零碎的校园事务，交给一个更聪明的入口。</p></div><div class="hero-art"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="art-card"><span>今日专注</span><strong>3<span>件</span></strong><small>待处理事项</small></div><div class="art-sticker">ON<br>TRACK</div></div></section>
+          <section class="alert-strip"><div class="alert-dot"></div><div><strong>快递提醒</strong><span>你有 2 件包裹即将超时，最晚今日 22:00 前取件</span></div><button class="text-btn" data-section="parcel">去看看 →</button></section>
+          <div class="section-heading"><div><p class="eyebrow">QUICK ACCESS</p><h2>常用服务</h2></div><button class="ghost-btn" id="allServices">全部服务 <span>↗</span></button></div>
+          <section class="service-grid" id="serviceGrid">
+            <button class="service-card featured" data-toast="已打开快递中心"><div class="service-top"><span class="service-symbol">▣</span><span class="arrow">↗</span></div><div><h3>快递中心</h3><p>2 件待取 · 菜鸟驿站</p></div><div class="progress"><span style="width:72%"></span></div></button>
+            <button class="service-card" data-toast="课程助手已打开"><div class="service-top"><span class="service-symbol green">◫</span><span class="arrow">↗</span></div><div><h3>课程助手</h3><p>今日 3 节课</p></div><div class="service-meta">下一节 <b>14:00</b></div></button>
+            <button class="service-card" data-toast="代课申请入口已打开"><div class="service-top"><span class="service-symbol orange">↗</span><span class="arrow">↗</span></div><div><h3>事务申请</h3><p>代课 / 请假 / 证明</p></div><div class="service-meta">审核中 <b>1</b> 项</div></button>
+            <button class="service-card" data-toast="失物招领已打开"><div class="service-top"><span class="service-symbol lilac">⌁</span><span class="arrow">↗</span></div><div><h3>失物招领</h3><p>帮你找回重要物品</p></div><div class="service-meta">本周新增 <b>12</b> 件</div></button>
+          </section>
+          <div class="dashboard-grid">
+            <section class="panel schedule-panel"><div class="panel-head"><div><p class="eyebrow">TODAY · WED 25</p><h2>今日课程</h2></div><button class="circle-btn" data-section="courses">↗</button></div><div class="timeline"><div class="time-label">09:00</div><div class="course-item done"><div class="course-line"></div><div><span class="course-tag">已完成</span><h3>设计史与理论</h3><p>艺术楼 A-203 · 09:00 — 10:40</p></div><span class="course-state">✓</span></div><div class="time-label">14:00</div><div class="course-item current"><div class="course-line"></div><div><span class="course-tag">下一节</span><h3>品牌视觉系统</h3><p>设计楼 C-406 · 14:00 — 15:40</p></div><span class="course-state">›</span></div><div class="time-label">19:00</div><div class="course-item"><div class="course-line"></div><div><span class="course-tag">晚间</span><h3>大学英语（选修）</h3><p>线上课堂 · 19:00 — 20:40</p></div><span class="course-state">○</span></div></div></section>
+            <section class="panel task-panel"><div class="panel-head"><div><p class="eyebrow">PERSONAL LIST</p><h2>我的待办</h2></div><button class="add-btn" id="addTask">＋ 新建</button></div><div class="task-list" id="taskList"><label class="task-row checked"><input type="checkbox" checked><span class="checkmark">✓</span><span class="task-text">领取快递 · 取件码 7391</span><small>今天</small></label><label class="task-row"><input type="checkbox"><span class="checkmark"></span><span class="task-text">提交代课申请信息</span><small>明天</small></label><label class="task-row"><input type="checkbox"><span class="checkmark"></span><span class="task-text">复习品牌策略章节 3</span><small>周五</small></label><label class="task-row"><input type="checkbox"><span class="checkmark"></span><span class="task-text">报名校园开放日志愿者</span><small>12/01</small></label></div><div class="task-foot"><span><b id="taskCount">3</b> 项待完成</span><button class="text-btn" id="clearDone">清除已完成</button></div></section>
+          </div>
+          <section class="bottom-feature"><div><p class="eyebrow">CAMPUS NOTE · 11.24</p><h2>把时间留给<br><em>真正重要的事。</em></h2><p>从取快递到课程提醒，Campus Hub 帮你把校园生活整理得更有秩序。</p><button class="dark-btn" id="learnMore">了解更多 <span>↗</span></button></div><div class="feature-shape"><div class="sun"></div><div class="building b1"></div><div class="building b2"></div><div class="building b3"></div><div class="path"></div></div></section>
+        </div>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status"></div>
+    <div class="search-modal" id="searchModal"><div class="search-box"><button class="close-btn" id="closeSearch">×</button><p class="eyebrow">SEARCH CAMPUS HUB</p><h2>你想找什么？</h2><input id="searchInput" type="search" placeholder="试试“快递”“课程”或“代课”" autofocus><div class="search-hints"><button>快递中心</button><button>今日课程</button><button>代课申请</button></div><p id="searchResult" class="search-result"></p></div></div>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
